@@ -498,4 +498,33 @@ main:after {
     width: 33%;
   }
 }
+
+/** Temas **/
+.temas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.temas h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 42px;
+  font-weight: 100;
+  width: 60%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 /*# sourceMappingURL=styles.css.map */
