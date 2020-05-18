@@ -256,6 +256,7 @@ header button {
   height: 48px;
   width: 288px;
   background: #00F3BB;
+  border: none;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
