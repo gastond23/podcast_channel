@@ -441,4 +441,61 @@ main:after {
     margin-left: 0;
   }
 }
+
+/** Guests **/
+.guest {
+  display: block;
+  width: 100%;
+}
+
+.guest h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  width: 50%;
+  font-weight: 100;
+}
+
+.guest .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.guest .img-container img {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .guest h2 {
+    margin-left: 15%;
+  }
+  .guest .img-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .guest .img-container img {
+    width: 33%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
