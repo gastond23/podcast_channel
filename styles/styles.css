@@ -94,6 +94,12 @@
   color: #00F3BB;
 }
 
+.menu-wrap .menu-item ul li a:active {
+  text-decoration: line-through;
+  color: #060A24;
+  opacity: 56%;
+}
+
 /** Lineas Hamburguesa **/
 .menu-wrap .hamburguesa > div {
   position: relative;
@@ -201,11 +207,6 @@
   .menu-wrap .menu-item ul li a {
     color: #060A24;
     text-decoration: none;
-  }
-  .menu-wrap .menu-item ul li a:hover {
-    text-decoration: line-through;
-    color: #060A24;
-    opacity: 56%;
   }
 }
 
