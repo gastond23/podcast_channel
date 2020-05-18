@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/** Header & Menu **/
+.menu-wrap {
+  height: 44px;
+  width: 100%;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-wrap img {
+  height: 24px;
+  width: 24px;
+}
+
+.menu-wrap .btn-check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburguesa {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-wrap .menu-item {
+  display: block;
+  margin-top: -280px;
+  height: 224px;
+  width: 320px;
+  background: #0000EC;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.menu-wrap .menu-item ul {
+  text-align: left;
+}
+
+.menu-wrap .menu-item ul li {
+  display: block;
+  height: 56px;
+  width: 100%;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  list-style: none;
+  line-height: 48px;
+  margin-left: 20px;
+}
+
+.menu-wrap .menu-item ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.menu-wrap .menu-item ul li a:hover {
+  text-decoration: line-through;
+  color: #00F3BB;
+}
+
+/** Lineas Hamburguesa **/
+.menu-wrap .hamburguesa > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburguesa > div:before,
+.menu-wrap .hamburguesa > div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/** Moviendo lineas **/
+.menu-wrap .hamburguesa > div:after {
+  top: 10px;
+}
+
+.menu-wrap .btn-check:checked + .hamburguesa > div {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+/** Formando la X **/
+.menu-wrap .btn-check:checked + .hamburguesa > div:before,
+.menu-wrap .btn-check:checked + .hamburguesa > div:after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/** Rotar cuando este hover y chequeado **/
+.menu-wrap .btn-check:checked:hover + .hamburguesa > div {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.menu-wrap .btn-check:checked ~ .menu-item {
+  visibility: visible;
+  margin-top: 280px;
+}
+/*# sourceMappingURL=styles.css.map */
