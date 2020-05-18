@@ -1,7 +1,7 @@
 .temas
     display: flex
     flex-direction: column
-    justify-content: space-between
+    justify-content: center
     align-items: center
     h2
         font-family: $font-titulo
@@ -13,3 +13,26 @@
         width: 60%
         margin-top: 5%
         margin-bottom: 5%
+    .icono-tema
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 100%
+        text-align: center
+        .icon-container
+            margin: 5%
+            h3
+                font-family: $font-titulo
+                font-size: 24px
+                color: #060a24
+                letter-spacing: 0
+                text-align: center
+
+@media(min-width: 600px)
+    .temas
+        h2
+            font-size: 48px
+            margin-bottom: 0
+        .icono-tema
+            flex-direction: row
