@@ -592,7 +592,7 @@ main:after {
   height: 400px;
 }
 
-.novedades h1 {
+.novedades h2 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
   font-weight: 100;
@@ -648,7 +648,7 @@ button:hover a {
 }
 
 @media (min-width: 600px) {
-  .novedades h1 {
+  .novedades h2 {
     font-size: 48px;
     margin-top: 5%;
   }
