@@ -251,8 +251,18 @@ header p {
   z-index: -1;
 }
 
-header button {
+header a {
+  text-decoration: none;
   display: block;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+header a button {
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: #060A24;
   margin-top: 5%;
   height: 48px;
   width: 288px;
@@ -262,22 +272,9 @@ header button {
   transition: all 0.5s linear;
 }
 
-header button a {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 16px;
-  color: #060A24;
-  text-decoration: none;
-  display: block;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-
-header button:hover {
-  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-}
-
-header button:hover a {
+header a button:hover {
   color: #ffffff;
+  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 }
 
 @media (min-width: 600px) {
@@ -293,7 +290,7 @@ header button:hover a {
   header p {
     margin-left: 10%;
   }
-  header button {
+  header a {
     margin-left: 10%;
   }
 }
@@ -600,11 +597,20 @@ main:after {
   letter-spacing: 0;
   text-align: center;
   line-height: 42px;
-  z-index: 2;
 }
 
-.novedades button {
+.novedades a {
+  text-decoration: none;
   display: block;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.novedades a button {
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: #060A24;
   margin-top: 5%;
   height: 48px;
   width: 288px;
@@ -612,26 +618,11 @@ main:after {
   border: none;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  z-index: 2;
 }
 
-.novedades button a {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 16px;
-  color: #060A24;
-  text-decoration: none;
-  display: block;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-  z-index: 2;
-}
-
-button:hover {
-  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-}
-
-button:hover a {
+.novedades a button:hover {
   color: #ffffff;
+  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 }
 
 .novedades:after {
