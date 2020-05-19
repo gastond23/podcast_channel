@@ -340,7 +340,8 @@ main:after {
   height: 100%;
   content: '';
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  tranform-origin: right;
+  -webkit-transform-origin: right;
+          transform-origin: right;
   -webkit-transform: skewY(-5deg);
           transform: skewY(-5deg);
 }
