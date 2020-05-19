@@ -284,7 +284,7 @@ header button:hover {
   header p {
     margin-left: 10%;
   }
-  header a {
+  header button {
     margin-left: 10%;
   }
 }
