@@ -251,14 +251,7 @@ header p {
   z-index: -1;
 }
 
-header a {
-  text-decoration: none;
-  display: block;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-
-header a button {
+header button {
   display: block;
   font-family: "IBM Plex Mono", monospace;
   font-size: 16px;
@@ -270,9 +263,10 @@ header a button {
   border: none;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
+  text-decoration: none;
 }
 
-header a button:hover {
+header button:hover {
   color: #ffffff;
   background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 }
@@ -599,15 +593,9 @@ main:after {
   line-height: 42px;
 }
 
-.novedades a {
+.novedades button {
+  display: block;
   text-decoration: none;
-  display: block;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-
-.novedades a button {
-  display: block;
   font-family: "IBM Plex Mono", monospace;
   font-size: 16px;
   color: #060A24;
@@ -620,7 +608,7 @@ main:after {
   transition: all 0.5s linear;
 }
 
-.novedades a button:hover {
+.novedades button:hover {
   color: #ffffff;
   background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 }
@@ -631,8 +619,8 @@ main:after {
   height: 100%;
   content: '';
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  -webkit-transform-origin: right;
-          transform-origin: right;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
   -webkit-transform: skewY(-5deg);
           transform: skewY(-5deg);
   z-index: -1;
