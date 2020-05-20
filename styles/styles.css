@@ -208,6 +208,28 @@
     color: #060A24;
     text-decoration: none;
   }
+  .menu-wrap .btn-check:checked ~ .menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+    height: 44px;
+    width: 90%;
+    visibility: visible;
+    background: #ffffff;
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 /** HEADER & TITULOS **/
