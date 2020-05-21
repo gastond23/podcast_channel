@@ -9,7 +9,6 @@
 .menu-wrap {
   height: 44px;
   width: 100%;
-  padding: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,6 +23,7 @@
 .menu-wrap img {
   height: 24px;
   width: 24px;
+  margin-left: 1%;
 }
 
 .menu-wrap .btn-check {
@@ -57,13 +57,15 @@
 
 .menu-wrap .menu-item {
   display: block;
-  margin-top: -280px;
+  position: fixed;
+  top: -14rem;
   height: 224px;
-  width: 320px;
+  width: 100%;
+  padding-left: 10%;
   background: #0000EC;
   visibility: hidden;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .menu-wrap .menu-item ul {
@@ -78,15 +80,15 @@
   font-size: 16px;
   list-style: none;
   line-height: 48px;
-  margin-left: 20px;
 }
 
 .menu-wrap .menu-item ul li a {
   display: block;
   text-decoration: none;
   color: #ffffff;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  text-align: left;
 }
 
 .menu-wrap .menu-item ul li a:hover {
@@ -98,6 +100,7 @@
   text-decoration: line-through;
   color: #060A24;
   opacity: 56%;
+  font-weight: 500;
 }
 
 /** Lineas Hamburguesa **/
@@ -115,8 +118,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .menu-wrap .hamburguesa > div:before,
@@ -156,10 +159,10 @@
 
 .menu-wrap .btn-check:checked ~ .menu-item {
   visibility: visible;
-  margin-top: 280px;
+  top: 3rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .menu-wrap img {
     height: 36px;
     width: 36px;
@@ -171,6 +174,8 @@
     display: none;
   }
   .menu-wrap .menu-item {
+    position: relative;
+    top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -186,7 +191,7 @@
             align-items: center;
     margin-top: 10px;
     height: 44px;
-    width: 90%;
+    width: 80%;
     visibility: visible;
     background: #ffffff;
     -webkit-transition: none;
@@ -196,8 +201,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
-    width: 60%;
+    width: 70%;
   }
   .menu-wrap .menu-item ul li {
     -webkit-box-flex: 1;
@@ -207,6 +211,7 @@
   .menu-wrap .menu-item ul li a {
     color: #060A24;
     text-decoration: none;
+    text-align: left;
   }
   .menu-wrap .btn-check:checked ~ .menu-item {
     display: -webkit-box;
@@ -216,6 +221,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    top: 0;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -224,7 +230,7 @@
             align-items: center;
     margin-top: 10px;
     height: 44px;
-    width: 90%;
+    width: 80%;
     visibility: visible;
     background: #ffffff;
     -webkit-transition: none;
@@ -280,7 +286,7 @@ header button {
   color: #060A24;
   margin-top: 5%;
   height: 48px;
-  width: 288px;
+  width: 100%;
   background: #00F3BB;
   border: none;
   -webkit-transition: all 0.5s linear;
@@ -293,7 +299,7 @@ header button:hover {
   background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   header {
     width: 50%;
     -webkit-box-align: start;
@@ -308,6 +314,8 @@ header button:hover {
   }
   header button {
     margin-left: 10%;
+    width: 226px;
+    height: 56px;
   }
 }
 
@@ -438,7 +446,7 @@ main:after {
   margin-top: 5%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .phone-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -498,7 +506,7 @@ main:after {
   width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .guest h2 {
     margin-left: 15%;
   }
@@ -572,7 +580,7 @@ main:after {
   text-align: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .temas h2 {
     font-size: 48px;
     margin-bottom: 0;
@@ -623,7 +631,7 @@ main:after {
   color: #060A24;
   margin-top: 5%;
   height: 48px;
-  width: 288px;
+  width: 90%;
   background: #00F3BB;
   border: none;
   -webkit-transition: all 0.5s linear;
@@ -648,10 +656,14 @@ main:after {
   z-index: -1;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .novedades h2 {
     font-size: 48px;
     margin-top: 5%;
+  }
+  .novedades button {
+    width: 345px;
+    height: 56px;
   }
 }
 
@@ -700,7 +712,7 @@ footer .media-container a {
   font-size: 16px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

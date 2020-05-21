@@ -1,13 +1,13 @@
 .menu-wrap
     height: 44px
     width: 100%
-    padding: 0.5rem
     display: flex
     justify-content: space-between
     align-items: center
     img
         height: 24px
         width: 24px
+        margin-left: 1%
     .btn-check
         position: absolute
         top: 0
@@ -29,12 +29,14 @@
         justify-content: center
     .menu-item
         display: block
-        margin-top: -280px
+        position: fixed
+        top: -14rem
         height: 224px
-        width: 320px
+        width: 100%
+        padding-left: 10%
         background: #0000EC
         visibility: hidden
-        transition: all 0.5s ease-in
+        transition: all 0.5s
         ul
             text-align: left
             li
@@ -45,12 +47,12 @@
                 font-size: 16px
                 list-style: none
                 line-height: 48px
-                margin-left: 20px
                 a
                     display: block
                     text-decoration: none
                     color: #ffffff
-                    transition: all 0.5s ease
+                    transition: color 0.5s ease
+                    text-align: left
             li a:hover
                 text-decoration: line-through
                 color: #00F3BB
@@ -58,6 +60,7 @@
                     text-decoration: line-through
                     color: #060A24
                     opacity: 56%
+                    font-weight: 500
 
 /** Lineas Hamburguesa **/
 
@@ -69,7 +72,7 @@
     display: flex
     align-items: center
     justify-content: center
-    transition: all 0.4s ease
+    transition: all 0.5s ease
 
 .menu-wrap .hamburguesa > div:before,
 .menu-wrap .hamburguesa > div:after
@@ -103,9 +106,9 @@
 
 .menu-wrap .btn-check:checked ~ .menu-item
     visibility: visible
-    margin-top: 280px
+    top: 3rem
 
-@media ( min-width: 600px )
+@media ( min-width: 768px )
     .menu-wrap
         img
             height: 36px
@@ -115,34 +118,37 @@
         .hamburguesa
             display: none
         .menu-item
+            position: relative
+            top: 0
             display: flex
             flex-direction: row
             justify-content: flex-end
             align-items: center
             margin-top: 10px
             height: 44px
-            width: 90%
+            width: 80%
             visibility: visible
             background: #ffffff
             transition: none
             ul
                 display: flex
-                text-align: center
-                width: 60%
+                width: 70%
                 li
                     flex-grow: 1
                     a
                         color: #060A24
                         text-decoration: none
+                        text-align: left
                 
     .menu-wrap .btn-check:checked ~ .menu-item
         display: flex
         flex-direction: row
+        top: 0
         justify-content: flex-end
         align-items: center
         margin-top: 10px
         height: 44px
-        width: 90%
+        width: 80%
         visibility: visible
         background: #ffffff
         transition: none
