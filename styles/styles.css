@@ -348,6 +348,9 @@ main h2 {
 
 main iframe {
   width: 95%;
+  border: none;
+  border-radius: 25px;
+  height: 232px;
   margin-left: 2%;
   z-index: 2;
   -ms-grid-column: 1;
