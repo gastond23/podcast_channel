@@ -631,6 +631,10 @@ main:after {
   line-height: 42px;
 }
 
+.novedades .boton {
+  width: 90%;
+}
+
 .novedades:after {
   position: absolute;
   width: 100%;
