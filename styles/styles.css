@@ -717,10 +717,40 @@ footer .media-container {
   margin-top: 1%;
 }
 
-footer .media-container a {
+footer .media-container .contenedor-icono a {
+  display: block;
   text-decoration: none;
   color: #060A24;
   font-size: 16px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.contenedor-icono:hover a {
+  -webkit-animation: icono 0.5s ease;
+          animation: icono 0.5s ease;
+}
+
+@-webkit-keyframes icono {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 0, 0);
+            transform: rotate3d(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@keyframes icono {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 0, 0);
+            transform: rotate3d(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
 }
 
 @media (min-width: 768px) {
@@ -740,7 +770,7 @@ footer .media-container a {
     width: 20%;
     margin-right: 5%;
   }
-  footer .media-container a {
+  footer .media-container .contenedor-icono a {
     font-size: 18px;
   }
 }
