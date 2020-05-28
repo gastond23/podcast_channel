@@ -69,10 +69,6 @@
   transition: all 0.5s;
 }
 
-.menu-wrap .menu-item ul {
-  text-align: left;
-}
-
 .menu-wrap .menu-item ul li {
   display: block;
   height: 56px;
@@ -217,7 +213,7 @@
   .menu-wrap .menu-item ul li a {
     color: #060A24;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
   }
   .menu-wrap .btn-check:checked ~ .menu-item {
     display: -webkit-box;
@@ -285,8 +281,9 @@ header p {
   z-index: -1;
 }
 
-header button {
+.boton {
   display: block;
+  cursor: pointer;
   font-family: "IBM Plex Mono", monospace;
   font-size: 16px;
   color: #060A24;
@@ -300,7 +297,7 @@ header button {
   text-decoration: none;
 }
 
-header button:hover {
+.boton:hover {
   color: #ffffff;
   background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 }
@@ -318,7 +315,7 @@ header button:hover {
   header p {
     margin-left: 10%;
   }
-  header button {
+  header .boton {
     margin-left: 10%;
     width: 226px;
     height: 56px;
@@ -634,26 +631,6 @@ main:after {
   line-height: 42px;
 }
 
-.novedades button {
-  display: block;
-  text-decoration: none;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 16px;
-  color: #060A24;
-  margin-top: 5%;
-  height: 48px;
-  width: 90%;
-  background: #00F3BB;
-  border: none;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-
-.novedades button:hover {
-  color: #ffffff;
-  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-}
-
 .novedades:after {
   position: absolute;
   width: 100%;
@@ -672,7 +649,7 @@ main:after {
     font-size: 48px;
     margin-top: 5%;
   }
-  .novedades button {
+  .novedades .boton {
     width: 345px;
     height: 56px;
   }
