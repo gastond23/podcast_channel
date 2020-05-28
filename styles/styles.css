@@ -714,8 +714,8 @@ footer .media-container .contenedor-icono a {
 
 @-webkit-keyframes icono {
   0% {
-    -webkit-transform: rotate3d(0, 0, 0, 0);
-            transform: rotate3d(0, 0, 0, 0);
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+            transform: rotate3d(0, 1, 0, 0deg);
   }
   100% {
     -webkit-transform: rotate3d(0, 1, 0, 360deg);
@@ -725,8 +725,8 @@ footer .media-container .contenedor-icono a {
 
 @keyframes icono {
   0% {
-    -webkit-transform: rotate3d(0, 0, 0, 0);
-            transform: rotate3d(0, 0, 0, 0);
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+            transform: rotate3d(0, 1, 0, 0deg);
   }
   100% {
     -webkit-transform: rotate3d(0, 1, 0, 360deg);
