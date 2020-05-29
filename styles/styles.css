@@ -703,11 +703,12 @@ footer .media-container .contenedor-icono a {
   text-decoration: none;
   color: #060A24;
   font-size: 16px;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-.contenedor-icono:hover a {
+footer .contenedor-icono a:hover {
+  color: #00F3BB;
   -webkit-animation: icono 0.5s ease;
           animation: icono 0.5s ease;
 }
