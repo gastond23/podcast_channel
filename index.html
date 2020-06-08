@@ -10,94 +10,99 @@
 </head>
 
 <body>
-
-    <nav class="menu-wrap">
-        <img src="images/logo.svg" alt="logo">
-        <input type="checkbox" class="btn-check" id="btn-check">
-        <div class="hamburguesa">
-            <div></div>
-        </div>
-
-        <div class="menu-item">
-            <ul>
-                <li><a href="#episodios">EPISODIOS</a></li>
-                <li><a href="#nosotros">NOSOTROS</a></li>
-                <li><a href="#guest">ENTREVISTAS</a></li>
-                <li><a href="#topicos">TÓPICOS</a></li>
-            </ul>
-        </div>
-
-    </nav>
     <header>
-        <h1>Hello <span class="tachado">world</span> pale blue dot<span class="punto">.</span></h1>
-        <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los
-            jueves cada 15 días.</p>
-        <button type="submit"
-            onclick="window.open('https://open.spotify.com/show/2Iibd5A6R7mxkCm4NwNmUn?si=-OYur9z3QUec7SQWRL9yZw','_blank')"
-            class="boton">CONOCÉ MÁS</button>
+        <nav class="menu-wrap">
+            <img src="images/logo.svg" alt="logo">
+            <input type="checkbox" class="btn-check" id="btn-check">
+            <div class="hamburguesa">
+                <div></div>
+            </div>
+
+            <div class="menu-item">
+                <ul>
+                    <li><a href="#episodios">EPISODIOS</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#guest">ENTREVISTAS</a></li>
+                    <li><a href="#topicos">TÓPICOS</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <section class="header">
+            <h1>Hello <span class="tachado">world</span> pale blue dot<span class="punto">.</span></h1>
+            <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos
+                los
+                jueves cada 15 días.</p>
+            <button type="submit"
+                onclick="window.open('https://open.spotify.com/show/2Iibd5A6R7mxkCm4NwNmUn?si=-OYur9z3QUec7SQWRL9yZw','_blank')"
+                class="boton">CONOCÉ MÁS</button>
+        </section>
     </header>
-    <main id="episodios">
-        <h2>Episodios</h2>
-        <iframe class="pod_1" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
-            allow="encrypted-media"></iframe>
-        <iframe class="pod_2" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
-            allow="encrypted-media"></iframe>
-        <iframe class="pod_3" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
-            allow="encrypted-media"></iframe>
-        <iframe class="pod_4" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
-            allow="encrypted-media"></iframe>
+    <main>
+        <section id="episodios">
+            <h2>Episodios</h2>
+            <iframe class="pod_1" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
+                allow="encrypted-media"></iframe>
+            <iframe class="pod_2" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
+                allow="encrypted-media"></iframe>
+            <iframe class="pod_3" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
+                allow="encrypted-media"></iframe>
+            <iframe class="pod_4" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+                allow="encrypted-media"></iframe>
 
+        </section>
+
+        <figure class="phone-container" id="nosotros">
+            <img src="images/phone.png" alt="Phone">
+            <article>
+                <h2>De dónde venimos</h2>
+                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+                    the
+                    Universe, are challenged by this point of pale light.
+                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                    vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            </article>
+        </figure>
+        <section class="guest" id="guest">
+            <h2>Invitadas/os estelares</h2>
+            <div class="img-container">
+                <img src="images/grace-hopper.png" alt="Grace Hopper">
+                <img src="images/Katie-Bouman.png" alt="Katie Bouman">
+                <img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton">
+                <img src="images/computer_1950.png" alt="An E.R.A. Univac 1103 computer in the 1950">
+                <img src="images/eniac.png" alt="Computer operators an Eniac">
+                <img src="images/susan-kare.png" alt="Susan Kare">
+            </div>
+        </section>
+        <section class="temas" id="topicos">
+            <h2>Algunos de nuestros temas</h2>
+            <div class="icono-tema">
+                <div class="icon-container">
+                    <img src="images/icon1.svg" alt="Trabajo Remoto">
+                    <h3>Trabajo remoto</h3>
+                </div>
+                <div class="icon-container">
+                    <img src="images/icon2.svg" alt="Repensando la progarmación">
+                    <h3>Repensando la programación</h3>
+                </div>
+                <div class="icon-container">
+                    <img src="images/icon3.svg" alt="Bases del código">
+                    <h3>Bases del código</h3>
+                </div>
+                <div class="icon-container">
+                    <img src="images/icon4.svg" alt="Seguridad informática">
+                    <h3>Seguridad informática</h3>
+                </div>
+            </div>
+
+        </section>
+        <section class="novedades">
+            <h2>¿Querès las últimas novedades?</h2>
+            <button type="submit"
+                onclick="window.open('https://open.spotify.com/show/5JxcIaIkN8zx3Zy7yD9snv?si=DdOkLht3RQqg3aHXPk080w','_blank')"
+                class="boton">ESCUCHÁ LOS EPISODIOS</button>
+        </section>
     </main>
-
-    <figure class="phone-container" id="nosotros">
-        <img src="images/phone.png" alt="Phone">
-        <article>
-            <h2>De dónde venimos</h2>
-            <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
-                Universe, are challenged by this point of pale light.
-                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
-                vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-        </article>
-    </figure>
-    <section class="guest" id="guest">
-        <h2>Invitadas/os estelares</h2>
-        <div class="img-container">
-            <img src="images/grace-hopper.png" alt="Grace Hopper">
-            <img src="images/Katie-Bouman.png" alt="Katie Bouman">
-            <img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton">
-            <img src="images/computer_1950.png" alt="An E.R.A. Univac 1103 computer in the 1950">
-            <img src="images/eniac.png" alt="Computer operators an Eniac">
-            <img src="images/susan-kare.png" alt="Susan Kare">
-        </div>
-    </section>
-    <section class="temas" id="topicos">
-        <h2>Algunos de nuestros temas</h2>
-        <div class="icono-tema">
-            <div class="icon-container">
-                <img src="images/icon1.svg" alt="Trabajo Remoto">
-                <h3>Trabajo remoto</h3>
-            </div>
-            <div class="icon-container">
-                <img src="images/icon2.svg" alt="Repensando la progarmación">
-                <h3>Repensando la programación</h3>
-            </div>
-            <div class="icon-container">
-                <img src="images/icon3.svg" alt="Bases del código">
-                <h3>Bases del código</h3>
-            </div>
-            <div class="icon-container">
-                <img src="images/icon4.svg" alt="Seguridad informática">
-                <h3>Seguridad informática</h3>
-            </div>
-        </div>
-
-    </section>
-    <section class="novedades">
-        <h2>¿Querès las últimas novedades?</h2>
-        <button type="submit"
-            onclick="window.open('https://open.spotify.com/show/5JxcIaIkN8zx3Zy7yD9snv?si=DdOkLht3RQqg3aHXPk080w','_blank')"
-            class="boton">ESCUCHÁ LOS EPISODIOS</button>
-    </section>
     <footer>
         <h6>© 2019— Hello blue pale dot</h6>
         <div class="media-container">
